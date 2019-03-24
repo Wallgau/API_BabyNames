@@ -1,61 +1,62 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <title>Game1_javscript_olfa</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Coda|Courgette|Pacifico" rel="stylesheet">
+    <head>
+        <meta charset="utf-8" />
+        <title>Game1_javscript_olfa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Coda|Courgette|Pacifico" rel="stylesheet">
 
 
-</head>
+    </head>
 
-<body>
-    <header>
-        <div class="logo"><i class="fas fa-baby"></i></div>
-        <h1 class="title">Your Baby Names</h1>
-    </header>
-    <section class="baby-image"></section>
+    <body>
+        <header>
+            <div class="logo"><i class="fas fa-baby"></i></div>
+            <h1 class="title">Your Baby Names</h1>
+        </header>
+        <section class="baby-image"></section>
 
-    <section id="form-zone">
-        <form class="form theform" action="">
-            <div class="idea-name wrapper">
-                <p>You have no baby's name ideas, find one by gender</p>
-                <div class="gender">
-                    <div class="gender-boy">
-                        <label for="boy">boy</label>
-                        <input type="radio" id="boy" class="form1-boy" value="M" name="sex">
+        <section id="form-zone">
+            <form class="form theform" action="">
+                <div class="idea-name wrapper">
+                    <p>You have no baby's name ideas, find one by gender</p>
+                    <div class="gender">
+                        <div class="gender-boy">
+                            <label for="boy">boy</label>
+                            <input type="radio" id="boy" class="form1-boy" value="M" name="sex">
+                        </div>
+                        <div class="gender-girl">
+                            <label for="girl">girl</label>
+                            <input type="radio" id="girl" class="form1-girl" value="F" name="sex">
+                        </div>
                     </div>
-                    <div class="gender-girl">
-                        <label for="girl">girl</label>
-                        <input type="radio" id="girl" class="form1-girl" value="F" name="sex">
-                    </div>
+                    <input class="idea-name-button" id="ideaButton" type="submit" value="get Names">
                 </div>
-                <input class="idea-name-button" id="ideaButton" type="submit" value="get Names">
+                <div class="check-name wrapper">
+                    <p>You want to know if your baby's name is traditional, popular, original or timeless</p>
+                    <label for="name"></label>
+                    <input class="form2" name="name" id="myname" placeholder="Please enter your baby's name ">
+                    <input class="check-name-button" id="check-button" type="submit" value="Ckeck here!">
+                </div>
+            </form>
+            <div id="answer"></div>
+            <div id="listnames">
+                <h1 id="randyName"></h1>
+                <p class="tryAgain">If you don't like this name, try again, you will get a new option!</p>
             </div>
-            <div class="check-name wrapper">
-                <p>You want to know if your baby's name is traditional, popular, original or timeless</p>
-                <label for="name"></label>
-                <input class="form2" name="name" id="myname" placeholder="Please enter your baby's name ">
-                <input class="check-name-button" id="check-button" type="submit" value="Ckeck here!">
-            </div>
-        </form>
-        <div id="answer"></div>
-        <div  id="listnames">
-            <h1 id="randyName"></h1>
-            <p class="tryAgain">If don't like this name, try again, you will get a new option!</p>
-        </div>
-    </section>
-    
+        </section>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="script.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="script.js"></script>
 
 
-</body>
+    </body>
 
 </html>
