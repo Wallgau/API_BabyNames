@@ -1,7 +1,4 @@
-body {
-    margin: auto;
-    max-width: 1240px;
-}
+
 
 article,
 aside,
@@ -111,12 +108,14 @@ textarea {
     font-family: sans-serif;
     font-size: 100%;
     line-height: 1.15;
-    margin: 0
+    margin: 2%;
 }
 
 button,
 input {
-    overflow: visible
+    overflow: visible;
+    font-size: 1rem;
+    padding: 2%;
 }
 
 button,
@@ -224,44 +223,37 @@ template {
 
 /*style our page*/
 
-.wrapper {
-    max-width: 1240px
-}
-
-.baby-image {
-    background-image: url('images/baby-background.jpeg');
-    background-size: cover;
-    padding: 30% 30% 30% 0%;
-    margin-top: 50px;
-}
-
 header {
-    display: grid;
-    grid-auto-columns: 50% 50%;
-    grid-auto-rows: auto;
+    display: flex;
+    justify-content:space-around;
     font-family: 'Pacifico', cursive;
-    background-color: dimgrey;
-    position: fixed;
+    background-color: slategrey;
     width: 100%;
     padding-bottom: 2%;
-    margin-top: -50px;
+    color:pink;
+    
+}
+html{
+    background: slategrey;
+    height: 100vh;
+}
+footer{
+    position:absolute;
+    width:100%;
+}
+section{
+    width:100%;
+}
+.wrapper{
+    margin:0 auto;
+    max-width: 1680px;
+    width: 76%;
+    margin:0 auto;
 }
 
-header .logo {
-    grid-column: 1 / 2;
-    margin-top: 10px;
-    margin-left: 5%;
-    font-size: 2.2em;
-    color: white;
-    ;
-}
 
 header h1 {
-    grid-column: 2 / 3;
-    color: white;
     font-size: 25px;
-    margin-top: 15px;
-    margin-left: 50%;
 }
 
 .gender {
@@ -269,85 +261,78 @@ header h1 {
     justify-content: space-around;
 }
 
-.form {
-    display: grid;
-    grid-auto-rows: auto;
-    grid-auto-columns: 50% 50%;
-    grid-gap: 10px;
-    padding: 15%;
-    background-color: dimgrey/* url('images/form-background.jpeg') */
-    ;
-    background-size: cover;
-}
+.form.form.theform {
+    display: flex;
+    justify-content:space-between;
+    background-color: slategrey;
+    min-width: 100%;
+    margin:0;
 
-.idea-name {
-    grid-column: 1 / 2;
-    font-size: 1.5em;
-    background-image: url('images/background-gender.jpeg');
-    background-size: cover;
-}
-
-.check-name {
-    grid-column: 2 / 3;
-    font-size: 1.5em;
-    padding: 1%;
-    background-image: url('images/form2-background.jpeg');
-    background-size: cover;
 }
 
 .idea-name,
 .check-name {
+    font-size:1.5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
     font-family: 'Courgette', cursive;
-    padding: 1%;
-    width: 100%;
-    color: white;
     text-align: center;
     border-radius: 15px;
+    background: pink;
+    width:40%;
+    padding:5%;
+    margin-top: 2%;
+
+}
+.idea-name p, .check-name p{
+    padding: 5%;
+    margin-bottom:5%;
 }
 
-.form2 {
-    border-radius: 15px;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    width: 80%;
-}
 
-.check-name-button {
+
+.check-name-button,.idea-name-button {
     border-radius: 15px;
     font-family: 'Coda', cursive;
     color: darkgrey;
+    font-size: 1rem;
     background-color: purple;
-    margin: 1%;
     border: white solid 2px;
+    padding: 3% 5%;
+    box-shadow: 4px 4px purple;
+    text-align:center;
+    width: 40%;
+    margin:auto;
 }
 
 .check-name p {
     color: black;
 }
 
-.idea-name-button {
+
+/*.idea-name-button {
     margin-top: 10%;
     margin-bottom: 5%;
     border-radius: 15px;
     font-family: 'Coda', cursive;
     color: darkgrey;
-    background: white;
-    border: white solid 2px;
     background-color: purple;
-}
+    padding: 3% 5%;
+    box-shadow: 4px 4px purple;
+    text-align:center;
+    width: 40%;
+    margin:auto;
+    font-size: 1rem;
+}*/
 
 .gender-boy,
 .gender-girl {
-    text-transform: uppercase
+    text-transform: uppercase;
+    margin: 4%;
 }
 
-footer {
-    background: lightslategrey;
-    ;
-    color: white;
-    font-family: 'Coda', cursive;
-    padding: 4% 2%;
-}
+
 
 .left-footer {
     padding-bottom: 1%;
@@ -356,7 +341,7 @@ footer {
 #answer {
     text-align: center;
     font-family: 'Coda', cursive;
-    color: darkslategrey;
+    color: white;
     font-size: 2.5em;
 }
 
@@ -367,51 +352,51 @@ footer {
 #randyName {
     text-align: center;
     font-family: 'Coda', cursive;
-    color: darkslategrey;
+    color: white;
 }
 
 .tryAgain {
     text-align: center;
     font-family: 'Coda', cursive;
-    color: darkslategrey;
+    color: white;
+    background: slategray;
     font-size: 1.5em;
 }
-
+header {
+        padding-top: 1%;
+     
+    }
+header .logo {
+        font-size: 2rem;
+        margin: auto 0;
+    }
+.title {
+        font-size: 1rem;
+       
+    }
 
 /* RESPONSIVE */
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
     .idea-name-button {
         margin-top: 25%;
     }
     .form {
-        grid-auto-columns: auto;
+        flex-direction:column;
         padding: 5%;
     }
     .idea-name {
-        grid-column: 1/ 2;
-        grid-row: 1 / 2;
+       
         width: 100%;
     }
     .check-name {
-        grid-column: 1/ 2;
-        grid-row: 2 / 3;
-        width: 100%;
+                width: 100%;
     }
-    .title {
-        font-size: 15px;
-        margin-left: 15%;
-    }
+    
     .baby-image {
         display: none;
     }
-    header {
-        padding-top: 15%;
-        position: unset;
-    }
-    header .logo {
-        font-size: 25px;
-    }
+    
 }
 
 

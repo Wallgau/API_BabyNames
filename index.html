@@ -14,15 +14,15 @@
 </head>
 
 <body>
-    <header class="wrapper">
+    <header>
         <div class="logo"><i class="fas fa-baby"></i></div>
         <h1 class="title">Your Baby Names</h1>
     </header>
     <section class="baby-image"></section>
 
-    <section class="wrapper" id="form-zone">
-        <form class="form theform wrapper" action="">
-            <div class="idea-name">
+    <section id="form-zone">
+        <form class="form theform" action="">
+            <div class="idea-name wrapper">
                 <p>You have no baby's name ideas, find one by gender</p>
                 <div class="gender">
                     <div class="gender-boy">
@@ -39,22 +39,17 @@
             <div class="check-name wrapper">
                 <p>You want to know if your baby's name is traditional, popular, original or timeless</p>
                 <label for="name"></label>
-                <input class="form2" name="name" id="myname" placeholder="Please enter your baby's name here">
+                <input class="form2" name="name" id="myname" placeholder="Please enter your baby's name ">
                 <input class="check-name-button" id="check-button" type="submit" value="Ckeck here!">
             </div>
         </form>
         <div id="answer"></div>
-        <div id="listnames">
+        <div  id="listnames">
             <h1 id="randyName"></h1>
             <p class="tryAgain">If don't like this name, try again, you will get a new option!</p>
         </div>
     </section>
-    <footer>
-        <div class="left-footer">
-            <p>&copy; 2018 Olfa.Maslah</p>
-        </div>
-
-    </footer>
+    
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
